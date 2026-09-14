@@ -10,6 +10,12 @@ import tseslint from "typescript-eslint";
  * */
 export const config = [
   js.configs.recommended,
+  {
+    files: ["**/*.{js,mjs,cjs,ts,tsx}"],
+    rules: {
+      "no-undef": "off",
+    },
+  },
   eslintConfigPrettier,
   {
     files: ["**/*.{js,mjs,cjs,ts,tsx}"],

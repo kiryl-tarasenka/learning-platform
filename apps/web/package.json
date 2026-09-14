@@ -8,10 +8,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint . --max-warnings 0",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "check-types": "next typegen && tsc --noEmit"
   },
   "dependencies": {
     "@base-ui/react": "^1.8.0",
+    "axios": "^1.8.4",
     "@repo/ui": "workspace:*",
     "class-variance-authority": "^0.7.1",
     "cn": "^0.3.0",
@@ -30,6 +33,7 @@
     "@types/react": "19.2.18",
     "@types/react-dom": "19.2.5",
     "eslint": "10.9.1",
+    "prettier": "3.9.6",
     "tailwindcss": "^4.3.3",
     "typescript": "^6.0.0"
   }
